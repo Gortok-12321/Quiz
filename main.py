@@ -1,3 +1,9 @@
+import os
+
+
+# функция которая пишет консольные команды
+os.system("color 2")
+
 point = 0
 
 print("Welcome to Quiz")
@@ -7,6 +13,7 @@ print("1) Леонид Якубович",
       "3) Александр Петров",
       "4) Дмитрий Комаров")
 user_input = input("Введи ответ: \n")
+os.system("cls")
 
 if user_input == "1":
     # правильный ответ
@@ -27,6 +34,7 @@ print("1)горшок",
       "2)Йоаким",
       "3)радио тапок")
 user_input = input("Введи ответ: \n")
+os.system("cls")
 if user_input == "3":
     print("верно")
     point = point + 1
@@ -42,6 +50,7 @@ print("1)битва за москву",
       "2)смута",
       "3)цусима")
 user_input = input("Введи ответ: \n")
+os.system("cls")
 if user_input == "1":
     print("верно")
     point = point + 1
@@ -57,6 +66,7 @@ print("1) 35",
     "2) явно старше Иисуcа",
     "3) 61")
 user_input = input("Введи ответ: \n")
+os.system("cls")
 
 if user_input == "2":
     print("а ты шаришь")
@@ -67,3 +77,5 @@ else:
     if point > 0:
         point = point - 1
     print("ваше количество балов", point)
+# остановить программу
+input("для выхода нажмите ENTER")
